@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Ideal line lengths by font; Web-safe fonts</title>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="linelength.js"></script>
+	<script src="includes/simpleslider/simple-slider.min.js"></script>
+	
+	<link rel="stylesheet" href="linelength.css">
+	<link rel="stylesheet" href="simple-slider.css">
+</head>
+<body>
+	<div id="heading">
+		<h1>Ideal Line Lengths by Font (Web Safe Fonts)</h1>
+	</div>
+	<div id="intro">
+		<p>This is based upon an ideal line length between 50 and 75 characters. I measured these using the opening lines of Kafka's <i>The Metamorphosis</i>:<blockquote>"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed ..."</blockquote></p>
+		<table>
+			<tr>
+				<th>Font</th>
+				<th>Line width (em)</th>
+			</tr>
+			<tr>
+				<td class="arial">Arial/Helvetica</td>
+				<td>24-36em</td>
+			</tr>
+			<tr>
+				<td class="arialb">Arial Black</td>
+				<td>30-44em</td>
+			</tr>
+			<tr>
+				<td class="comicsans">Comic Sans</td>
+				<td>25-38em</td>
+			</tr>
+			<tr>
+				<td class="courier">Courier New</td>
+				<td>30-45em</td>
+			</tr>
+			<tr>
+				<td class="garamond">Garamond</td>
+				<td>22-32em</td>
+			</tr>
+			<tr>
+				<td class="geneva">Geneva</td>
+				<td>23-34em</td>
+			</tr>
+			<tr>
+				<td class="georgia">Georgia</td>
+				<td>24-36em</td>
+			</tr>
+			<tr>
+				<td class="impact">Impact</td>
+				<td>22-33em</td>
+			</tr>
+			<tr>
+				<td class="lucidac">Lucida Console</td>
+				<td>30-45em</td>
+			</tr>
+			<tr>
+				<td class="lucidag">Lucida Sans Unicode/Lucida Grande</td>
+				<td>27-40em</td>
+			</tr>
+			<tr>
+				<td class="palatino">Palatino Linotype/Book Antiqua</td>
+				<td>25-36em</td>
+			</tr>
+			<tr>
+				<td class="tahoma">Tahoma</td>
+				<td>25-36em</td>
+			</tr>
+			<tr>
+				<td class="times">Times New Roman/Times</td>
+				<td>22-33em</td>
+			</tr>
+			<tr>
+				<td class="trebuchet">Trebuchet MS</td>
+				<td>25-37em</td>
+			</tr>
+			<tr>
+				<td class="verdana">Verdana</td>
+				<td>28-41</td>
+			</tr>
+		</table>
+		<p>As you can see, it's possible to just default to a value of 30em for pretty much all fonts, however the effect you get will be quite variable and in some cases, fairly ugly</p>
+		<p>Exact line length whether it be 50 or 75 characters is subject to personal taste; I personally prefer a line length of 67 characters or so, a line height of 1.5em and letter spacing of +1px or so.</p>
+		<p>The formula for generating the line width with a different letter spacing is essentially:</p>
+		<p><img src="eqn1.png" alt=""></p>
+		<p>where</p>
+		<p><img src="eqn2.png" alt=""></p>.
+		<p>This code is available on <a href="http://github.com/snipergirl/linelength">GitHub</a></p>
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+	</div>
+	<div id="tester">
+		<h2>Test it out here:</h2>
+		Text width: <span class="thewidth">540</span>px (<span class="emswidth">30</span>em)<br />
+		<input type="range" id="charsline" max="75" min="50" step="1" value="62"><span class="charsline">62</span> characters per line<br />
+		<input type="range" id="fontsize" max="24" min="8" step="1" value="18">Font size <span class="fontsize">18</span>px<br />
+		<input type="range" id="letterspacing" max="3" min="-3" step="1" value="0">Letter spacing <span class="letterspacing">0</span>px<br />
+		
+		<span class="button arial" data-size="24">Arial/Helvetica</span>
+		<span class="button arialb" data-size="30">Arial Black</span>
+		<span class="button comicsans" data-size="25">Comic Sans</span>
+		<span class="button courier" data-size="30">Courier</span>
+		<span class="button garamond" data-size="22">Garamond</span>
+		<span class="button geneva" data-size="23">Geneva</span>
+		<span class="button georgia" data-size="24">Georgia</span>
+		<span class="button impact" data-size="22">Impact</span>
+		<span class="button lucidac" data-size="30">Lucida Console</span>
+		<span class="button lucidag" data-size="27">Lucida Sans/Grande</span>
+		<span class="button palatino" data-size="25">Palatino/Book Antiqua</span>
+		<span class="button tahoma" data-size="25">Tahoma</span>
+		<span class="button times" data-size="22">Times</span>
+		<span class="button trebuchet" data-size="25">Trebuchet</span>
+		<span class="button verdana" data-size="28">Verdana</span>
+		<div class="kafka georgia">
+			<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+			<p>"What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
+			<p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
+			<p>"Oh, God", he thought, "what a strenuous career it is that I've chosen! Travelling day in and day out. Doing business like this takes much more effort than doing your own business at home, and on top of that there's the curse of travelling, worries about making train connections, bad and irregular food, contact with different people all the time so that you can never get to know anyone or become friendly with them. It can all go to Hell!" He felt a slight itch up on his belly; pushed himself slowly up on his back towards the headboard so that he could lift his head better; found where the itch was, and saw that it was covered with lots of little white spots which he didn't know what to make of; and when he tried to feel the place with one of his legs he drew it quickly back because as soon as he touched it he was overcome by a cold shudder.</p>
+		</div>
+	</div>
+</body>
+</html>

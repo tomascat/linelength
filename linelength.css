@@ -1,0 +1,148 @@
+/* html5doctor.com Reset v1.6.1 - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+body{
+font: 18px "Georgia", serif;
+color: #000;
+}
+
+#heading{
+padding:1em;
+float:left;
+}
+
+#intro{
+padding:1em;
+width:30em;
+clear:both;
+float:left;
+}
+
+#tester {
+padding:1em;
+width:50em;
+float:left;
+}
+
+h1{
+font-size:200%;
+}
+
+blockquote{
+padding-top:1em;
+padding-bottom:1em;
+font-style:italic;
+}
+
+.kafka{
+margin-top:1em;
+padding:1em;
+border:1px #000 solid;
+width:30em;
+}
+
+p{
+margin-bottom:1em;
+}
+
+table{
+margin-top:1em;
+margin-bottom:1em;
+}
+
+tr{
+border-bottom:dotted 1px #333;
+}
+
+tr:first-child{
+border-top:dotted 1px #333;
+background-color:#333;
+color:#fff;
+}
+
+tr:nth-child(even){
+background-color:#ddd;
+}
+
+tr:nth-child(2n+3){
+background-color:#fff;
+}
+
+td{
+padding-right:0.5em;
+}
+
+.arial{
+font-family:"Arial","Helvetica";
+}
+
+.arialb{
+font-family:"Arial Black";
+}
+
+.comicsans{
+font-family:"Comic Sans MS";
+}
+
+.courier{
+font-family:"Courier New";
+}
+
+.garamond{
+font-family:"Garamond";
+}
+
+.geneva{
+font-family:"Geneva";
+}
+
+.georgia{
+font-family:"Georgia";
+}
+
+.impact{
+font-family:"Impact";
+}
+
+.lucidac{
+font-family:"Lucida Console";
+}
+
+.lucidag{
+font-family:"Lucida Sans Unicode","Lucida Grande","Lucida Sans";
+}
+
+.palatino{
+font-family:"Palatino Linotype","Book Antiqua";
+}
+
+.tahoma{
+font-family:"Tahoma";
+}
+
+.times{
+font-family:"Times New Roman","Times";
+}
+
+.trebuchet{
+font-family:"Trebuchet MS";
+}
+
+.verdana{
+font-family:"Verdana";
+}
+
+.button {
+	text-decoration: none;
+	color: black;
+	background: #ccc;
+	padding: 0 .5em 0 .5em;
+	border:1px solid #000;
+	border-radius: .4em;
+	-moz-border-radius: .4em;
+	font-size:75%;
+}
+
+.button:hover{
+background:#bbb;
+}
