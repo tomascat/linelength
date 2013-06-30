@@ -8,13 +8,27 @@
 	<script src="linelength.js"></script>
 	
 	<link rel="stylesheet" href="linelength.css">
+	<link rel="stylesheet" href="gfonts.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div id="heading">
-		<h1>Ideal Line Lengths by Font (Web Safe Fonts)</h1>
+		<h1>Ideal Line Lengths by Font (Top Google Fonts)</h1>
 	</div>
 	<div id="intro">
-		<p><a href="gfonts.htm"><i>c.f Google Web Fonts</i></a></p>
+		<p><a href="index.htm"><i>c.f Web Safe Fonts</i></a></p>
+		<p>These are the top 15 <a href="http://google.com/fonts/">Google Web Fonts</a> as of July 2013 (excepting Roboto regular, which for some reason I was unable to obtain).</p>
 		<p>This is based upon an ideal line length between 50 and 75 characters. I measured these using the opening lines of Kafka's <i>The Metamorphosis</i>:<blockquote>"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed ..."</blockquote></p>
 		<table>
 			<tr>
@@ -22,107 +36,105 @@
 				<th>Line width (em)</th>
 			</tr>
 			<tr>
-				<td class="arial">Arial/Helvetica</td>
-				<td>24-36em</td>
+				<td class="opensans">Open Sans (Regular)</td>
+				<td>26-38em</td>
 			</tr>
 			<tr>
-				<td class="arialb">Arial Black</td>
-				<td>30-44em</td>
+				<td class="oswald">Oswald (Regular)</td>
+				<td>21-31em</td>
 			</tr>
 			<tr>
-				<td class="comicsans">Comic Sans</td>
+				<td class="droidsans">Droid Sans (Regular)</td>
 				<td>25-38em</td>
 			</tr>
 			<tr>
-				<td class="courier">Courier New</td>
-				<td>30-45em</td>
+				<td class="lato">Lato</td>
+				<td>24-35em</td>
 			</tr>
 			<tr>
-				<td class="garamond">Garamond</td>
-				<td>22-32em</td>
+				<td class="opensanscl">Open Sans (Condensed Light)</td>
+				<td>18-27em</td>
 			</tr>
 			<tr>
-				<td class="geneva">Geneva</td>
+				<td class="kite">Kite One</td>
+				<td>24-35em</td>
+			</tr>
+			<tr>
+				<td class="ptsans">PT Sans (Regular)</td>
 				<td>23-34em</td>
 			</tr>
 			<tr>
-				<td class="georgia">Georgia</td>
-				<td>24-36em</td>
+				<td class="droidserif">Droid Serif (Regular)</td>
+				<td>26-39em</td>
 			</tr>
 			<tr>
-				<td class="impact">Impact</td>
-				<td>22-33em</td>
+				<td class="ptsansn">PT Sans Narrow</td>
+				<td>19-28em</td>
 			</tr>
 			<tr>
-				<td class="lucidac">Lucida Console</td>
-				<td>30-45em</td>
-			</tr>
-			<tr>
-				<td class="lucidag">Lucida Sans Unicode/Lucida Grande</td>
-				<td>27-40em</td>
-			</tr>
-			<tr>
-				<td class="palatino">Palatino Linotype/Book Antiqua</td>
-				<td>25-36em</td>
-			</tr>
-			<tr>
-				<td class="tahoma">Tahoma</td>
-				<td>25-36em</td>
-			</tr>
-			<tr>
-				<td class="times">Times New Roman/Times</td>
-				<td>22-33em</td>
-			</tr>
-			<tr>
-				<td class="trebuchet">Trebuchet MS</td>
+				<td class="ubuntu">Ubuntu</td>
 				<td>25-37em</td>
 			</tr>
 			<tr>
-				<td class="verdana">Verdana</td>
-				<td>28-41em</td>
+				<td class="yanone">Yanone Kaffeesatz</td>
+				<td>16-24em</td>
+			</tr>
+			<tr>
+				<td class="robotoc">Roboto Condensed</td>
+				<td>21-31em</td>
+			</tr>
+			<tr>
+				<td class="sourcesans">Source Sans Pro</td>
+				<td>23-34em</td>
+			</tr>
+			<tr>
+				<td class="titillium">Titillium Web</td>
+				<td>23-34em</td>
 			</tr>
 		</table>
-		<p>As you can see, it's possible to just default to a value of 30em for pretty much all fonts, however the effect you get will be quite variable and in some cases, fairly ugly.</p>
-		<p>Exact line length whether it be 50 or 75 characters is subject to personal taste; I personally prefer a line length of 67 characters or so and a line height of 1.5em.</p>
+		<p>The popular Google Web Fonts tend to have a smaller character width and bigger range of widths than the standard set of web-safe fonts. As a result, closer attention should be paid when selecting line width. 30em will not suit many of the listed fonts; the closest 'default' value that could be used is 24 or 25em and this will still not suit all fonts and can render an ugly result.</p>
+		<p>Exact line length whether it be 50 or 75 characters is subject to personal taste; I personally prefer a line length of 67 characters or so, a line height of 1.5em and letter spacing of +1px or so.</p>
 		<p>The formula for generating the line width with a different letter spacing is essentially:</p>
 		<p><img src="eqn1.png" alt=""></p>
 		<p>where</p>
-		<p><img src="eqn2.png" alt=""></p>.
-		<p>Arial and Helvetica are interchangeable; Trebuchet and Tahoma are very similar</p>
+		<p><img src="eqn2.png" alt=""></p>
 		<p>Here are some examples of appropriate font stacks:</p>
 		<ul id = "degrading">
-			<li>"Trebuchet", "Arial", "Helvetica", Sans-Serif</li>
-			<li>"Tahoma", "Arial", "Helvetica", Sans-Serif</li>
-			<li>"Garamond", "Times New Roman", "Times", Serif</li>
-			<li>"Georgia", "Palatino", Serif</li>
-			<li>"Lucida Console", "Courier New", "Courier", Monospace</li>
+			<li>"Open Sans", "Tahoma", "Trebuchet", Sans-Serif</li>
+			<li>"Droid Sans", "Tahoma", "Trebuchet", "Arial", "Helvetica", Sans-Serif</li>
+			<li>"Ubuntu", "Tahoma", "Trebuchet", "Arial", "Helvetica", Sans-Serif</li>
+			<li>"Lato", "Arial", "Helvetica", Sans-Serif</li>
+			<li>"PT Sans", "Geneva", "Arial", "Helvetica", Sans-Serif</li>
+			<li>"Source Sans Pro", "Geneva", "Arial", "Helvetica", Sans-Serif</li>
+			<li>"Titillium Web", "Geneva", "Arial", "Helvetica", Sans-Serif</li>
+			<li>"Oswald", "Impact", Sans-Serif</li>
+			<li>"Droid Serif", "Georgia", "Palatino", Serif</li>
 		</ul>
 		<p>This code is available on <a href="http://github.com/snipergirl/linelength">GitHub</a></p>
 		<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
 	</div>
 	<div id="tester">
 		<h2>Test it out here:</h2>
-		Text width: <span class="thewidth">540</span>px (<span class="emswidth">30</span>em)<br />
+		Text width: <span class="thewidth">580</span>px (<span class="emswidth">32</span>em)<br />
 		<input type="range" id="charsline" max="75" min="50" step="1" value="62"><span class="charsline">62</span> characters per line<br />
 		<input type="range" id="fontsize" max="24" min="8" step="1" value="18">Font size <span class="fontsize">18</span>px<br />
 		<input type="range" id="letterspacing" max="3" min="-3" step="1" value="0">Letter spacing <span class="letterspacing">0</span>px<br />
 		
-		<span class="button arial" data-size="24">Arial/Helvetica</span>
-		<span class="button arialb" data-size="30">Arial Black</span>
-		<span class="button comicsans" data-size="25">Comic Sans</span>
-		<span class="button courier" data-size="30">Courier</span>
-		<span class="button garamond" data-size="22">Garamond</span>
-		<span class="button geneva" data-size="23">Geneva</span>
-		<span class="button georgia" data-size="24">Georgia</span>
-		<span class="button impact" data-size="22">Impact</span>
-		<span class="button lucidac" data-size="30">Lucida Console</span>
-		<span class="button lucidag" data-size="27">Lucida Sans/Grande</span>
-		<span class="button palatino" data-size="25">Palatino/Book Antiqua</span>
-		<span class="button tahoma" data-size="25">Tahoma</span>
-		<span class="button times" data-size="22">Times</span>
-		<span class="button trebuchet" data-size="25">Trebuchet</span>
-		<span class="button verdana" data-size="28">Verdana</span>
-		<div class="kafka georgia">
+		<span class="button droidsans" data-size="26">Droid Sans</span>
+		<span class="button droidserif" data-size="26">Droid Serif</span>
+		<span class="button kite" data-size="24">Kite One</span>
+		<span class="button lato" data-size="24">Lato</span>
+		<span class="button opensans" data-size="26">Open Sans</span>
+		<span class="button opensanscl" data-size="18">Open Sans Condensed Light</span>
+		<span class="button oswald" data-size="21">Oswald</span>
+		<span class="button ptsans" data-size="23">PT Sans</span>
+		<span class="button ptsansn" data-size="19">PT Sans Narrow</span>
+		<span class="button robotoc" data-size="21">Roboto Condensed</span>
+		<span class="button sourcesans" data-size="23">Source Sans Pro</span>
+		<span class="button titillium" data-size="23">Titillium Web</span>
+		<span class="button ubuntu" data-size="25">Ubuntu</span>
+		<span class="button yanone" data-size="16">Yanone Kaffeesatz</span>
+		<div class="kafka opensans">
 			<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
 			<p>"What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p>
 			<p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p>
